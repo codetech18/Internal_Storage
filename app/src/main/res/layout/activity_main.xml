@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:padding="1sp"
+        android:layout_marginTop="12dp"
+        android:textSize="22sp"
+
+
+      />
+    <EditText
+        android:id="@+id/nameEditTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nameID"
+
+
+        />
+
+    <TextView
+        android:id="@+id/PasswordID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:padding="1sp"
+        android:layout_marginTop="12dp"
+        android:textSize="22sp"
+        android:layout_below="@id/nameID"
+
+
+        />
+
+    <EditText
+        android:id="@+id/passwordEditTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/PasswordID"
+        android:layout_below="@id/nameEditTextID"
+
+
+        />
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="SAVE"
+        android:onClick="save"
+        android:layout_below="@id/PasswordID"
+
+        />
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="NEXT"
+       android:onClick="Next"
+        android:layout_below="@id/passwordEditTextID"
+        android:layout_alignEnd="@id/passwordEditTextID"
+
+
+        />
+
+</RelativeLayout>

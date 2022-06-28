@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name2ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:padding="1sp"
+        android:layout_marginTop="12dp"
+        android:textSize="22sp"
+
+
+        />
+    <EditText
+        android:id="@+id/name2EditTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/name2ID"
+
+
+         />
+
+    <TextView
+        android:id="@+id/Password2ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:padding="1sp"
+        android:layout_marginTop="12dp"
+        android:textSize="22sp"
+        android:layout_below="@id/name2ID"
+
+
+        />
+
+    <EditText
+        android:id="@+id/password2EditTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Password2ID"
+        android:layout_below="@id/name2EditTextID"
+
+
+        />
+    <Button
+        android:id="@+id/retrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="Retrieve"
+        android:text="RETRIEVE"
+        android:layout_below="@id/Password2ID"
+
+        />
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="BACK"
+        android:onClick="Back"
+        android:layout_below="@id/password2EditTextID"
+        android:layout_alignEnd="@id/password2EditTextID"
+
+
+        />
+
+</RelativeLayout>
